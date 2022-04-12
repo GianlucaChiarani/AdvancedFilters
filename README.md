@@ -17,6 +17,7 @@ Main features:
 ## Example
 ```
 $(".filters-container").AdvancedFilters({
+  /*  The filterable fields properties */
   fields: {
     "date":{
       "label": "Delivery Date",
@@ -26,10 +27,13 @@ $(".filters-container").AdvancedFilters({
       "label": "Email Subject"
     }
   },
+  /*  The function called when the filters change */
   onFilter: function(json) {
      console.log(json);
   },
+  /*  The json of the predefined filters */
   activeFiltersJson: '{"filters":{"and":[{"field":"date","operator":"*","value":"2022-04-12"}]},"search":"test"}',
+  /*  The translated strings object */
   translations: {
     "contains": "",
     "not contains": "",
