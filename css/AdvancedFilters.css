@@ -1,0 +1,143 @@
+.filters-container { 
+    display: inline-block;
+    width: 400px;
+    position: relative;
+}
+.filters-container .search-container {
+    width: 100%;
+    display: flex;
+    padding: .31rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+}
+.filters-container .search-container.opened {
+    border-radius: .25rem .25rem 0 0;
+}
+.filters-container .search {
+    border: 0;
+    flex: 1;
+}
+.filters-container .search:focus{
+    outline: none;
+}
+.filters-container .advanced-filters-btn {
+    position: relative;
+    cursor: pointer;
+    width: 1rem;
+    text-align: center;
+}
+.filters-container .advanced-filters-btn .counter {
+    display: none;
+    background: red;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    font-weight: 800;
+    font-size: 9px;
+    min-width: 14px;
+    height: 14px;
+}
+.filters-container .advanced-filters {
+    display: none;
+    width: 100%;
+    top: 37.7px;
+    left: 0;
+    background: #DDD;
+    padding: .375rem;
+    border-radius: 0 0 .25rem .25rem;
+    position: absolute;
+    z-index: 1;
+}
+.filters-container .add_filter option[value=""][disabled] {
+    display: none;
+}
+.filters-container .advanced-filters .add-filter {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    appearance: none;
+    padding: .375rem .75rem;
+}
+.filters-container .advanced-filters .group {
+    margin-top: .5rem;
+    background: white;
+    padding: .2rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+}
+.filters-container .advanced-filters .field {
+    display: flex;
+    margin-top: .2rem;
+    background: white;
+    padding: .2rem;
+    border-radius: .25rem;
+    align-items: center;
+}
+.filters-container .advanced-filters .group .field {
+    padding: 0 .2rem;
+}
+.filters-container .advanced-filters .group .fields-container {
+    min-height: 25px;
+}
+.filters-container .advanced-filters .field .label {
+    flex: 1;
+    word-break: break-all;
+}
+.filters-container .advanced-filters .field .operator {
+    width: 30%;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-weight: bold;
+    margin: 0 .2rem;
+}
+.filters-container .advanced-filters .field .value {
+    width: 25%;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+}
+.filters-container .advanced-filters .group .andor-container {
+    display: flex;
+    align-items: center;
+}
+.filters-container .advanced-filters .group .andor {
+    background: none;
+    border: 0;
+    width: 100%;
+    font-weight: bold;
+}
+.filters-container .advanced-filters .sort-btn {
+    margin: 0 .5rem;
+    cursor: move;
+}
+.filters-container .advanced-filters .delete-btn {
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+@media (max-width: 575px){
+    .filters-container {
+        width: 100%;
+    }
+    .filters-container .advanced-filters .field .operator {
+        width: 25%;
+    }
+}
