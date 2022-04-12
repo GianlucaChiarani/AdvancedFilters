@@ -1,3 +1,9 @@
+/**
+ * AdvancedFilters (https://github.com/GianlucaChiarani/AdvancedFilters)
+ * @version 0.5
+ * @author Gianluca Chiarani
+ * @license The MIT License (MIT)
+ */
 (function ($) {
     $.fn.AdvancedFilters = function(options) {
 
