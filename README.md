@@ -5,15 +5,25 @@ Main features:
 - returns a JSON of the filters set in real time;
 - allows the user to create nested AND / OR groups;
 - supports multiple inputs types.
+
+[DEMO](https://codepen.io/GianlucaChiarani/pen/NWXLmEY)
+
 ## Requirements
 - jQuery;
 - jQuery UI;
 - Font Awesome 5 Free.
+
 ## Installation
 ```
 <link rel="stylesheet" href="css/AdvancedFilters.css" />
 <script type="text/javascript" src="js/AdvancedFilters.js"></script>
 ```
+OR
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@0.5/AdvancedFilters.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@0.5/AdvancedFilters.js"></script>
+```
+
 ## Example
 ```
 $(".filters-container").AdvancedFilters({
