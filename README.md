@@ -20,8 +20,8 @@ Main features:
 ```
 OR
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@v0.5/css/AdvancedFilters.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@v0.5/js/AdvancedFilters.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@v0.6/css/AdvancedFilters.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/GianlucaChiarani/AdvancedFilters@v0.6/js/AdvancedFilters.js"></script>
 ```
 
 ## Example
