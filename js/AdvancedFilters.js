@@ -1,6 +1,6 @@
 /**
  * AdvancedFilters (https://github.com/GianlucaChiarani/AdvancedFilters)
- * @version 0.5
+ * @version 0.6
  * @author Gianluca Chiarani
  * @license The MIT License (MIT)
  */
@@ -110,9 +110,9 @@
 
         function getFieldHtml(name, operator = '', value = '') {
             var field = settings.fields[name];
-            var label = field.label;
-            var type = field.type;
-            var options = field.options;
+            var label = (typeof field.label !== 'undefined'?field.label:name);
+            var type = (typeof field.type !== 'undefined'?field.type:'text');
+            var options = (typeof field.options !== 'undefined'?field.options:Object());
 
             var typeD = 'text';
 
@@ -149,6 +149,8 @@
             
             if (Object.keys(options).length) {
                 html += '<select class="value">';
+                html += '<option value=""></option>';
+                
                 for (let key in options) {
                     var optionValue = key;
                     var optionLabel = options[key];
@@ -197,7 +199,7 @@
         }
 
         function t(string) {
-            if (typeof settings.translations[string] != 'undefined')
+            if (typeof settings.translations[string] !== 'undefined' && settings.translations[string] != '')
                 return settings.translations[string];
             else
                 return string;
