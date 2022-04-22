@@ -27,6 +27,7 @@ OR
 ## Example
 ```
 $(".filters-container").AdvancedFilters({
+
   /*  The filterable fields properties */
   fields: {
     "date":{
@@ -34,15 +35,22 @@ $(".filters-container").AdvancedFilters({
       "type": "date"
     },
     "subject": {
-      "label": "Email Subject"
+      "label": "Email Subject",
+      "options": {
+        "value1": "label1",
+        "value2": "label2"
+      }
     }
   },
+  
   /*  The function called when the filters change */
   onFilter: function(json) {
      console.log(json);
   },
+  
   /*  The json of the predefined filters */
   activeFiltersJson: '{"filters":{"and":[{"field":"date","operator":"*","value":"2022-04-12"}]},"search":"test"}',
+  
   /*  The translated strings object */
   translations: {
     "contains": "",
