@@ -37,8 +37,8 @@ $(".filters-container").AdvancedFilters({
     "subject": {
       "label": "Email Subject",
       "options": {
-        "value1": "label1",
-        "value2": "label2"
+        "subject_1": "Subject 1",
+        "subject_2": "Subject 2"
       }
     }
   },
@@ -48,10 +48,10 @@ $(".filters-container").AdvancedFilters({
      console.log(json);
   },
   
-  /*  The json of the predefined filters */
+  /*  The json of the predefined filters - optional */
   activeFiltersJson: '{"filters":{"and":[{"field":"date","operator":"*","value":"2022-04-12"}]},"search":"test"}',
   
-  /*  The translated strings object */
+  /*  The translated strings object - optional */
   translations: {
     "contains": "",
     "not contains": "",
