@@ -112,6 +112,7 @@
             var field = settings.fields[name];
             var label = field.label;
             var type = field.type;
+            var options = field.options;
 
             var typeD = 'text';
 
@@ -144,8 +145,22 @@
                 html += '<option value="'+key+'"'+(operator == key?' selected':'')+'>'+t(operators[key])+'</option>';
             }
 
-            html += '</select>'+
-            '<input type="'+typeD+'" class="value" value="'+value+'" /><i class="fa fa-times delete-btn"></i>'+
+            html += '</select>';
+            
+            if (Object.keys(options).length) {
+                html += '<select class="value">';
+                for (let key in options) {
+                    var optionValue = key;
+                    var optionLabel = options[key];
+
+                    html += '<option value="'+optionValue+'"'+(value == optionValue?' selected':'')+'>'+optionLabel+'</option>';
+                }
+                html += '</select>';
+            } else {
+                html += '<input type="'+typeD+'" class="value" value="'+value+'" />';
+            }
+            
+            html += '<i class="fa fa-times delete-btn"></i>'+
             '</div>';
 
             return html;
