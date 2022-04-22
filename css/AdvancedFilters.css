@@ -120,6 +120,9 @@
     width: 25%;
     border-radius: .25rem;
     border: 1px solid #ced4da;
+    padding: 3px;
+    line-height: 1;
+    background: white;
 }
 .filters-container .advanced-filters .group .andor-container {
     display: flex;
