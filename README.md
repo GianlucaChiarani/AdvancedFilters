@@ -27,8 +27,6 @@ OR
 ## Example
 ```
 $(".filters-container").AdvancedFilters({
-
-  /*  The filterable fields properties */
   fields: {
     "date":{
       "label": "Delivery Date",
@@ -42,27 +40,21 @@ $(".filters-container").AdvancedFilters({
       }
     }
   },
-  
-  /*  The function called when the filters change */
   onFilter: function(json) {
      console.log(json);
   },
-  
-  /*  The json of the predefined filters - optional */
   activeFiltersJson: '{"filters":{"and":[{"field":"date","operator":"*","value":"2022-04-12"}]},"search":"test"}',
-  
-  /*  The translated strings object - optional */
   translations: {
-    "contains": "",
-    "not contains": "",
-    "equal": "",
-    "greater than": "",
-    "greater or equal than": "",
-    "lesser than": "",
-    "lesser or equal than": "",
-    "different from": "",
-    "in set": "",
-    "not in set": ""
+    "contains": "contiene",
+    "not contains": "non contiene",
+    "equal": "uguale",
+    "greater than": "maggiore",
+    "greater or equal than": "maggiore o uguale",
+    "lesser than": "minore di",
+    "lesser or equal than": "minore o uguale",
+    "different from": "diverso",
+    "in set": "nel set",
+    "not in set": "non nel set"
   }
 });
 ```
@@ -82,5 +74,12 @@ HTML:
     </div>
 </div>
 ```
+## Options
+| Name  | Type | Default | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| fields  | `Object`  | `false` | The filterable fields properties. |
+| onFilter  | `Function`  | `false` | The function called when the filters change. |
+| activeFiltersJson  | `Object`  | `false` | The json of the predefined filters - optional. |
+| translations  | `Object`  | `{}` | The translated strings object - optional. |
 ## Sponsor
 - Blupixel IT
