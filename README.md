@@ -50,7 +50,7 @@ $(".filters-container").AdvancedFilters({
     "equal": "uguale",
     "greater than": "maggiore",
     "greater or equal than": "maggiore o uguale",
-    "lesser than": "minore di",
+    "lesser than": "minore",
     "lesser or equal than": "minore o uguale",
     "different from": "diverso",
     "in set": "nel set",
@@ -79,7 +79,7 @@ HTML:
 | ------------- | ------------- | ------------- | ------------- |
 | fields  | `Object`  | `false` | The filterable fields properties. |
 | onFilter  | `Function`  | `false` | The function called when the filters change. |
-| activeFiltersJson  | `Object`  | `false` | The json of the predefined filters - optional. |
-| translations  | `Object`  | `{}` | The translated strings object - optional. |
+| activeFiltersJson  | `Object`  | `false` | The json of the predefined filters. |
+| translations  | `Object`  | `{}` | The translated strings object. |
 ## Sponsor
 - Blupixel IT
