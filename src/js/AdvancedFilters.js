@@ -74,8 +74,6 @@
             filter();
         });
 
-        initSort();
-
         if (settings.fields) {
             for (let key in settings.fields) {
                 var field = settings.fields[key];
@@ -99,6 +97,8 @@
 
             container.find('.counter').fadeIn(200).html(advancedFilterContainer.find('.field').length);
         }
+        
+        initSort();
         
         function initSort() {
             $(".advanced-filters .fields-container").sortable({
